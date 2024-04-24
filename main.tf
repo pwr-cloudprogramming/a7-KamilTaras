@@ -81,12 +81,10 @@ resource "aws_instance" "my_instance" {
   vpc_security_group_ids = [aws_security_group.my_security_group.id]
 
 
-  # User data for installing dependencies and running TicTacToe app
+  #installing dependencies and running TicTacToe app
   user_data                   = <<-EOF
               #!/bin/bash
-               #sudo apt update -y
-               #sudo apt install -y docker.io
-               #service docker start
+
               
               # Retrieve IP address using metadata script
               API_URL="http://169.254.169.254/latest/api"
@@ -103,19 +101,10 @@ resource "aws_instance" "my_instance" {
               
               # Save IP address to a file
               echo "$IP_V4" > /tmp/ec2_ip_address.txt
-              
-              # Provide deploy key directly in user data (not recommended for production)
-              echo "-----BEGIN OPENSSH PRIVATE KEY-----" > ~/.ssh/myrepokey
-              echo "-----END OPENSSH PRIVATE KEY-----" >> ~/.ssh/myrepokey
-              echo "Host github.com-app-repo" > ~/.ssh/config
-              echo "    Hostname github.com" >> ~/.ssh/config
-              echo "    IdentityFile=/root/.ssh/myrepokey" >> ~/.ssh/config
-              chmod 600 ~/.ssh/myrepokey
-              chmod 600 ~/.ssh/config
 
               # Clone GitHub repository using deploy key
               #git clone https://github.com/pwr-cloudprogramming/a1-KamilTaras.git
-              git clone https://github.com/pwr-cloudprogramming/a1-KamilTaras.git
+              git clone https://github.com/pwr-cloudprogramming/a7-KamilTaras.git
 
               sudo curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-$(uname -s)-$(uname -m)"  -o /usr/local/bin/docker-compose
               sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
