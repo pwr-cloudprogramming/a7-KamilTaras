@@ -1,4 +1,4 @@
-# Jane Doe - Terraform, EC2, TicTacToe report
+# Kamil Taras - Terraform, EC2, TicTacToe report
 
 - Course: *Cloud programming*
 - Group: Thursday 13:15 - 15:00
