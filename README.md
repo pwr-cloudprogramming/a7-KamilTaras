@@ -1,19 +1,32 @@
 # Jane Doe - Terraform, EC2, TicTacToe report
 
 - Course: *Cloud programming*
-- Group:
-- Date:
+- Group: Thursday 13:15 - 15:00
+- Date: 05.06.2024r.
 
 ## Environment architecture
 
 Description and scheme of the developed infrastructure.
+Before starting labs, I had to do adnotations to labs 5:
+![msedge_AibzUALIHz](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/c4893c76-9232-4d1e-a723-0d81cd52946a)
 
+As a result I got repositories:
+
+![msedge_w9Ng8BfNfn](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/d767e83a-24d7-42b7-8c30-e29430b82826)
+
+The whole solution is devided into modules (backend and frontend), to increase redability.
 ## Preview
 
 Screenshots of configured AWS services. Screenshots of your application running.
-Backend:
-![image](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/fac252f1-c08d-46ab-80fa-031a44c0443f)
-Frontend:
+ECR
+![image](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/47fe70a3-4e0c-47c8-b57e-ea920589deff)
+Fargate:
+![image](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/2d28acca-a41a-4600-8836-46283cd0704e)
+![image](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/0c8c47fb-7cf9-43fa-957b-9935cd6d92dc)
+![image](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/25067c89-39fb-4c60-b188-e8f957e419d1)
+
+![image](https://github.com/pwr-cloudprogramming/a7-KamilTaras/assets/116663154/16e20e3b-5fbe-47f6-a11f-f067e26bf5a9)
+
 
 ![Sample image](img/sample-image.png)
 
