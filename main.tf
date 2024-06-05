@@ -102,7 +102,6 @@ resource "aws_instance" "my_instance" {
               # Save IP address to a file
               echo "$IP_V4" > /tmp/ec2_ip_address.txt
 
-              # Clone GitHub repository using deploy key
               #git clone https://github.com/pwr-cloudprogramming/a1-KamilTaras.git
               git clone https://github.com/pwr-cloudprogramming/a7-KamilTaras.git
 
